@@ -1,0 +1,248 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #121214;
+    font-family: 'Montserrat', sans-serif;
+}
+
+/*      ALIGN AND JUSTIFY       */
+header,
+.container,
+.container .select_questions .question_quantiti,
+.container .secondary_button,
+.container .secondary_button span {
+    justify-content: center;
+    align-items: center;
+}
+
+/*      DISPLAY FLEX       */
+header,
+header nav .navbar,
+header nav .navbar .logo,
+header nav .navbar .menu,
+.container,
+.container .topo_page .select_questions,
+.container .select_questions .question_quantiti,
+.container .secondary_button,
+.container .secondary_button span {
+    display: flex;
+}
+
+/*       SCROLLBAR        */
+::-webkit-scrollbar {
+    width: 13px;
+    background-color: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+    border: 3px solid #121214;
+    border-radius: 5px;
+    background: #4d4d57;
+}
+
+
+/* NAVBAR */
+header {
+    height: 88px;
+    border-bottom: 1px solid #29292e;
+}
+
+header nav .navbar {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 50rem;
+}
+
+header nav .navbar img {
+    width: 8rem;
+    margin-left: 15px;
+    cursor: pointer;
+    float: left;
+}
+
+header nav .navbar .menu a {
+    text-decoration: none;
+    padding: 2.3rem;
+    font-size: 15px;
+    border: none;
+    background-color: #ffffff00;
+    color: #737380;
+    cursor: pointer;
+    border-bottom: 3px solid #0088ff00;
+}
+
+header nav .navbar .menu a:hover {
+    border-bottom: 3px solid #0088FF;
+    color: #ffffff;
+    transition: .3s;
+}
+
+
+/*   ---    CONTAINER    ---    */
+.container {
+    flex-direction: column;
+}
+
+
+/*       TOPO       */
+.container .topo_page {
+    width: 90%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 2rem;
+}
+
+.container .topo_page .select_simulator,
+.select_questions {
+    margin-left: 2rem;
+    color: #ffffff;
+    font-size: 18px;
+}
+
+.container .topo_page .select_questions {
+    align-items: center;
+}
+
+.container .select_questions .question_quantiti {
+    margin-left: 1rem;
+    box-sizing: border-box;
+    position: relative;
+    width: 60px;
+    height: 40px;
+    border-radius: 10px;
+    background-color: #202024;
+    transition: 0.5s;
+}
+
+.container .select_questions .question_quantiti:hover {
+    width: 120px;
+    border: 3px solid #0088FF;
+}
+
+.container .select_questions .question_quantiti .next {
+    right: 5px;
+    transform: translateY(-50%) rotate(-90deg);
+}
+
+.container .select_questions .question_quantiti .prev {
+    left: 5px;
+    transform: translateY(-50%) rotate(90deg);
+}
+
+.container .select_questions .question_quantiti .next,
+.container .select_questions .question_quantiti .prev {
+    display: none;
+    position: absolute;
+    width: 2rem;
+    top: 50%;
+    cursor: pointer;
+    opacity: 0;
+    transition: 1s;
+}
+
+.container .select_questions .question_quantiti:hover .next,
+.container .select_questions .question_quantiti:hover .prev {
+    display: block;
+    opacity: 1;
+}
+
+.container .select_questions .question_quantiti #box span {
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    line-height: 46px;
+    display: none;
+    color: #0088FF;
+    font-size: 24px;
+    font-weight: 700;
+    user-select: none;
+}
+
+.container .select_questions .question_quantiti #box span:nth-child(1) {
+    display: initial;
+}
+
+
+/*       GALERIA DAS MATÉRIAS       */
+.container .subjects_container {
+    width: 90%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 2rem;
+    margin-bottom: 3rem;
+}
+
+.container .subjects_container .subject {
+    display: block;
+    position: relative;
+    margin: 2rem 0 0 2rem;
+    padding-left: 2rem;
+    width: 50%;
+}
+
+.container .subjects_container .subject input {
+    display: none;
+}
+
+.container .subjects_container .subject:hover input~.checkmark {
+    background-color: #4d4d57;
+}
+
+.container .subjects_container .subject input:checked~.checkmark {
+    background-color: #0088FF;
+}
+
+.container .subjects_container .subject .checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 20px;
+    width: 20px;
+    background-color: #202024;
+    border-radius: 2px;
+}
+
+.container .subjects_container .subject .checkmark::after {
+    content: "";
+    position: absolute;
+    display: none;
+    left: 6px;
+    top: 2px;
+    width: 5px;
+    height: 10px;
+    border: solid #ffffff;
+    border-width: 0 3px 3px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+
+.container .subjects_container .subject input:checked~.checkmark::after {
+    display: block;
+}
+
+.container .subjects_container .subject span {
+    color: #ffffff;
+}
+
+
+/*      BOTÃO FAZER SIMULADO        */
+.container .secondary_button {
+    width: 90%;
+}
+
+.container .secondary_button span {
+    width: 15rem;
+    height: 3rem;
+    margin: 3rem 0 5rem 0;
+    background: #29292e;
+    border: 2px solid #0088FF;
+    color: #ffffff;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: .5s;
+}
+
+.container .secondary_button span:hover {
+    background: #0088FF;
+}

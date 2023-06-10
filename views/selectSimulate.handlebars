@@ -1,0 +1,70 @@
+<header>
+    <nav>
+        <div class="navbar">
+            <div class="logo">
+                <img src="/img/sintro_logo.svg" alt="Instiro">
+            </div>
+            <div class="menu">
+                <a href="/">Sair de {{userName}}</a>
+            </div>
+        </div>
+    </nav>
+</header>
+
+<div class="container">
+
+    <section class="topo_page">
+        <div class="select_simulator">
+            <p>Selecione as matérias para o simulado</p>
+        </div>
+        <div class="select_questions">
+            <a>Selecione a quantidade de questões</a>
+            <div class="question_quantiti">
+                <svg class="next" onclick="nextNum()" id="Layer_1" data-name="Layer 1"
+                    xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500">
+                    <defs>
+                        <style>
+                            .cls-1 {
+                                fill: #fff;
+                            }
+                        </style>
+                    </defs>
+                    <title>Artboard 1</title>
+                    <path class="cls-1"
+                        d="M358.69,174.86l-94.05,94.05a20,20,0,0,1-28.28,0l-94.05-94.05A20,20,0,0,0,128.17,169h0c-17.82,0-26.75,21.54-14.15,34.14L236.36,325.48a20,20,0,0,0,28.28,0L387,203.14c12.6-12.6,3.67-34.14-14.15-34.14h0A20,20,0,0,0,358.69,174.86Z" />
+                </svg>
+                <svg class="prev" onclick="prevNum()" id="Layer_1" data-name="Layer 1"
+                    xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500">
+                    <defs>
+                        <style>
+                            .cls-1 {
+                                fill: #fff;
+                            }
+                        </style>
+                    </defs>
+                    <title>Artboard 1</title>
+                    <path class="cls-1"
+                        d="M358.69,174.86l-94.05,94.05a20,20,0,0,1-28.28,0l-94.05-94.05A20,20,0,0,0,128.17,169h0c-17.82,0-26.75,21.54-14.15,34.14L236.36,325.48a20,20,0,0,0,28.28,0L387,203.14c12.6-12.6,3.67-34.14-14.15-34.14h0A20,20,0,0,0,358.69,174.86Z" />
+                </svg>
+                <div id="box"></div>
+            </div>
+        </div>
+    </section>
+
+    <section class="subjects_container">
+        {{#each materias}}
+            <label class="subject">
+                <span>{{name}}</span>
+                <input id="{{_id}}" type="checkbox">
+                <span class="checkmark"></span>
+            </label>
+        {{else}}
+
+        {{/each}} 
+        
+    </section>
+
+    <div class="secondary_button">
+        <span onclick="myFunction()">FAZER SIMULADO</span>
+    </div>
+</div>

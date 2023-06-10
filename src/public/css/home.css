@@ -1,0 +1,420 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #0f0f0f;
+}
+
+/*      ALIGN AND JUSTIFY       */
+header,
+header nav .navbar .menu,
+.content .section_form,
+.content .section_form aside,
+.content .section_form aside form button,
+.content .section_form aside form a,
+footer .footer_bar {
+    justify-content: center;
+    align-items: center;
+}
+
+/*      DISPLAY FLEX       */
+header,
+header nav .navbar .menu,
+.content .section_form,
+.content .section_form aside,
+.content .section_form aside form .input_form,
+.content .section_form aside form a,
+footer .footer_bar,
+footer div span {
+    display: flex;
+}
+
+
+/*       SCROLLBAR        */
+::-webkit-scrollbar {
+    width: 10px;
+    background-color: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+    border: none;
+    border-radius: 2px;
+    background: #202020;
+}
+
+/*      ERROR       */
+.errors {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 12px;
+    margin-top: .5rem;
+}
+
+.alert-error {
+    color: #ff1010;
+}
+
+.containerMsg{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.error_msg{
+    margin-top: 1rem;
+    width: 90%;
+    font-family: 'Montserrat', sans-serif;
+    color: #ffffff;
+}
+
+/* NAVBAR */
+header {
+    height: 88px;
+    border-bottom: 1px solid #29292e;
+}
+
+header nav .navbar {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+header nav .navbar img {
+    width: 8rem;
+    margin-left: 15px;
+    cursor: pointer;
+}
+
+header nav .navbar .menu {
+    width: 100%;
+    height: 100%;
+    font-family: 'Montserrat', sans-serif;
+    margin: auto;
+}
+
+header nav .navbar .menu .item_menu {
+    padding: 35px 0;
+    margin-left: 3rem;
+    color: #737380;
+    cursor: pointer;
+    border-bottom: 3px solid #0088ff00;
+}
+
+header nav .navbar .menu .item_menu:hover {
+    border-bottom: 3px solid #0088FF;
+    color: #ffffff;
+    transition: .3s;
+}
+
+header nav .navbar .menu span {
+    padding: .7rem 1rem;
+    margin-left: 3rem;
+    border-radius: 7px;
+    border: 1px solid #0088FF;
+    background-color: #ffffff00;
+    color: #0088FF;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+header nav .navbar .menu span:hover {
+    background-color: #0088FF;
+    color: #ffffff;
+    transition: .5s;
+}
+
+
+/*      IMG / FORM       */
+.content {
+    width: 100%;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.content .section_form {
+    margin-top: 2rem;
+}
+
+.content .section_form .img_home img {
+    width: 450px;
+    margin: auto;
+    margin-right: 3rem;
+}
+
+.content .section_form aside {
+    margin-left: 5rem;
+    width: 25rem;
+    height: 23rem;
+    background-color: #202020;
+    border-radius: 10px;
+}
+
+.content .section_form aside form div input {
+    color: #505050;
+    margin: auto;
+    width: 18rem;
+    height: 3rem;
+    background-color: #0f0f0f;
+    margin-top: 1rem;
+    border: 2px solid #202020;
+    border-radius: 5px;
+    padding-left: 2.7rem;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    cursor: text;
+}
+
+.content .section_form aside form div input:focus {
+    outline: none;
+    border: 2px solid rgb(0, 136, 255);
+    color: #0088FF;
+    transition: .3s ease;
+}
+
+.content .section_form aside form div input::-webkit-input-placeholder {
+    font-family: 'Montserrat', sans-serif;
+    color: #505050;
+}
+
+.content .section_form aside form .input_form {
+    padding: 0;
+}
+
+.content .section_form aside form .input_form svg {
+    position: absolute;
+    margin: 1.85rem 0 0 .8rem;
+    float: left;
+    width: 25px;
+}
+
+.content .section_form aside form .input_form svg path {
+    fill: #505050;
+}
+
+.content .section_form aside form div input:focus+svg path {
+    fill: #0088FF;
+    transition: .3s ease;
+}
+
+.content .section_form aside form button {
+    text-decoration: none;
+    margin: auto;
+    margin-top: 2rem;
+    width: 20rem;
+    height: 2.8rem;
+    border-radius: 5px;
+    border-style: none;
+    font-weight: 700;
+    font-size: 15px;
+    background-color: #0088FF;
+    color: #ffffff;
+    cursor: pointer;
+}
+
+.content .section_form aside form button:hover {
+    background-color: #52aeff;
+    transition: .3s;
+}
+
+.content .section_form aside form p {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 30px;
+    font-size: 13px;
+    color: #ffffff;
+}
+
+.content .section_form aside form .register {
+    text-decoration: none;
+    margin-left: 5px;
+    color: #0088ff;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+/*      ABOUT       */
+
+.content .about {
+    border-bottom: #202020 2px solid;
+    border-top: #202020 2px solid;
+    overflow: hidden;
+}
+
+.about .info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 5rem;
+}
+
+.about .logo_sintro img {
+    width: 20rem;
+    margin: 5rem 0 3rem 0;
+    cursor: default;
+}
+
+.about .info .media {
+    text-align: center;
+}
+
+.about .info .media .text {
+    margin-top: 4rem;
+    width: 40rem;
+    color: #ffffff;
+    text-align: justify;
+    font-size: 18px;
+}
+
+.about .info .media .img {
+    width: 0;
+    height: 0;
+}
+
+.about .info .media .img img {
+    width: 40rem;
+    opacity: .5;
+    position: relative;
+    bottom: 24rem;
+    left: 400px;
+}
+
+/*       PACOTES DE CRÉDITO      */
+.packeges_cred .content_packeges {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 3rem 0 0 0;
+    color: #ffffff;
+}
+
+.packeges_cred .content_packeges h1 {
+    font-size: 3rem;
+    text-align: center;
+}
+
+.packeges_cred .content_packeges h1 span {
+    color: #0088FF;
+}
+
+.packeges_cred .content_packeges .text_info {
+    position: relative;
+    right: .5rem;
+    font-size: 18px;
+}
+
+.packeges_cred .content_packeges .galery_price {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-column-gap: 4rem;
+    margin-top: 3rem;
+}
+
+.packeges_cred .content_packeges .galery_price .item {
+    background-color: #202020;
+    width: 20rem;
+    height: 23rem;
+    border: #505050 2px solid;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.packeges_cred .content_packeges .galery_price .item h3 {
+    font-size: 2rem;
+    text-align: center;
+    margin: 0 0 15px 0;
+}
+
+.packeges_cred .content_packeges .galery_price .item p {
+    font-size: 2rem;
+    margin: 5px;
+}
+
+.packeges_cred .content_packeges .galery_price .item p span {
+    font-size: 1rem;
+    margin: 5px;
+}
+
+.packeges_cred .content_packeges .galery_price .pistol .buttom {
+    padding: .7rem 5rem;
+    margin: 15px;
+    border-radius: 7px;
+    border: 1px solid #0088FF;
+    background-color: #ffffff00;
+    color: #0088FF;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.packeges_cred .content_packeges .galery_price .pistol .buttom:hover {
+    background-color: #0088FF;
+    color: #ffffff;
+    transition: .5s;
+}
+
+.packeges_cred .content_packeges .galery_price .shotgun .buttom {
+    padding: .7rem 5rem;
+    margin: 15px;
+    border-radius: 7px;
+    background-color: #0088ff;
+    color: #ffffff;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.packeges_cred .content_packeges .galery_price .shotgun .buttom:hover {
+    background-color: #0070d3;
+    transition: .5s;
+}
+
+.packeges_cred .content_packeges .galery_price .barrett .buttom {
+    padding: .7rem 5rem;
+    margin: 15px;
+    border-radius: 7px;
+    background-color: #04D361;
+    color: #0f0f0f;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.packeges_cred .content_packeges .galery_price .barrett .buttom:hover {
+    background-color: #00b350;
+    transition: .5s;
+}
+
+.packeges_cred .content_packeges .galery_price .item .text_info {
+    width: 90%;
+    font-size: 18px;
+    text-align: center;
+}
+
+/*       RODA PÉ      */
+footer {
+    margin-top: 4rem;
+    width: 100%;
+    border-top: 1px solid #29292e;
+    font-family: 'Montserrat', sans-serif;
+}
+
+@media screen and (min-height: 600px) {
+    footer {
+        margin-top: 7rem;
+    }
+}
+
+footer div img {
+    width: 7rem;
+    margin: auto;
+    margin: 18px 0 5px 10px;
+}
+
+footer div span {
+    font-size: 10px;
+    color: #ffffff;
+    margin: 10px;
+}

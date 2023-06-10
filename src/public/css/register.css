@@ -1,0 +1,200 @@
+body {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #121214;
+}
+
+/*      ALIGN AND JUSTIFY       */
+header,
+header nav .navbar .menu,
+.content .section_form,
+.content .section_form aside,
+.content .section_form aside form button,
+.content .section_form aside form a,
+footer .footer_bar {
+    justify-content: center;
+    align-items: center;
+}
+
+/*      DISPLAY FLEX       */
+header,
+header nav .navbar .menu,
+.content .section_form,
+.content .section_form aside,
+.content .section_form aside form .input_form,
+.content .section_form aside form a,
+footer .footer_bar,
+footer div span {
+    display: flex;
+}
+
+
+/*       SCROLLBAR        */
+::-webkit-scrollbar {
+    width: 10px;
+    background-color: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+    border: none;
+    border-radius: 2px;
+    background: #4d4d57;
+}
+
+/*      ERROR       */
+.errors {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 12px;
+    margin-top: .5rem;
+}
+
+.alert-error {
+    color: #ff1010;
+}
+
+
+/*      IMG / FORM       */
+.content {
+    width: 100%;
+    font-family: 'Montserrat', sans-serif;
+
+}
+
+.content .section_form {
+    margin-top: 3rem;
+}
+
+.content .section_form .img_home img {
+    width: 500px;
+    margin: auto;
+    margin-right: 3rem;
+}
+
+.content .section_form aside {
+    margin-left: 5rem;
+    width: 27rem;
+    height: 33rem;
+    background-color: #202024;
+    border-radius: 10px;
+}
+
+.content .section_form aside form {
+    margin-top: 1rem;
+}
+
+.content .section_form aside form div input {
+    margin: auto;
+    width: 19rem;
+    height: 3rem;
+    background-color: #121214;
+    margin-top: 1rem;
+    border: 2px solid #e7e7e700;
+    border-radius: 5px;
+    padding-left: 3rem;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 15px;
+    font-weight: 700;
+    color: #505050;
+    cursor: text;
+}
+
+.content .section_form aside form div input:focus {
+    outline: none;
+    border: 2px solid rgb(0, 136, 255);
+    color: #0088FF;
+    transition: .3s ease;
+}
+
+.content .section_form aside form div input::-webkit-input-placeholder {
+    font-family: 'Montserrat', sans-serif;
+    color: #737380;
+}
+
+.content .section_form aside form .input_form {
+    padding: 0;
+}
+
+.content .section_form aside form .input_form svg {
+    position: absolute;
+    margin: 1.9rem 0 0 1rem;
+    float: left;
+    width: 25px;
+}
+
+.content .section_form aside form .input_form svg path {
+    fill: #737380;
+}
+
+.content .section_form aside form div input:focus+svg path {
+    fill: #0088FF;
+    transition: .3s ease;
+}
+
+.content .section_form aside form .enter_button {
+    text-decoration: none;
+    margin: auto;
+    margin-top: 2.5rem;
+    width: 22rem;
+    height: 3rem;
+    border-radius: 5px;
+    border-style: none;
+    font-size: 13px;
+    font-weight: 700;
+    background-color: #0088FF;
+    color: #ffffff;
+    cursor: pointer;
+}
+
+.content .section_form aside form .enter_button:hover {
+    background-color: #0064bb;
+    transition: .3s;
+}
+
+.content .section_form aside form .msg_register {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    width: 80%;
+    color: #ffffff;
+    line-height: 20px;
+}
+
+.content .section_form aside form .msg_register a {
+    text-decoration: none;
+    color: #0088ff;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+
+/*       RODA PÉ      */
+footer {
+    margin-top: 4rem;
+    width: 100%;
+    border-top: 1px solid #29292e;
+    font-family: 'Montserrat', sans-serif;
+}
+
+@media screen and (min-height: 600px) {
+    footer {
+        margin-top: 2.5rem;
+    }
+}
+
+footer div img {
+    width: 7rem;
+    margin: auto;
+    margin: 18px 0 5px 10px;
+}
+
+footer div span {
+    font-size: 10px;
+    color: #ffffff;
+    margin: 10px;
+}

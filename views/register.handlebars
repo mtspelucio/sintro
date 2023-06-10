@@ -1,0 +1,89 @@
+<div class="content">
+    <div class="section_form">
+        <section class="img_home">
+            <img src="/img/sintro_login.png" alt="Instiro">
+        </section>
+        <aside>
+            <form action="/routes/registerUser" method="POST">
+                <div class="input_form">
+                    <input type="email" name="email" placeholder="E-mail">
+                    <svg id="Layer_2" data-name="Layer 2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 25 25">
+                        <defs>
+                            <style>
+                                .cls-1 {
+                                    fill: #e7e7e7;
+                                }
+                            </style>
+                        </defs>
+                        <title>email</title>
+                        <path class="cls-1"
+                            d="M21,10.48v7.11a1.59,1.59,0,0,1-1.59,1.59H6.34a1.59,1.59,0,0,1-1.59-1.59v-7a.4.4,0,0,1,.66-.32l5.66,4.51a2.36,2.36,0,0,0,2.88.06l6.4-4.69A.41.41,0,0,1,21,10.48Z" />
+                        <path class="cls-1"
+                            d="M20.82,8a.62.62,0,0,1-.21.76L13.36,14a1.38,1.38,0,0,1-1.67,0L5.1,8.74A.61.61,0,0,1,4.92,8a1.56,1.56,0,0,1,1.42-.89H19.41A1.59,1.59,0,0,1,20.82,8Z" />
+                    </svg>
+                </div>
+                <div class="input_form">
+                    <input type="text" name="nameUser" placeholder="Nome de usuário">
+                    <svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500">
+                        <defs>
+                            <style>
+                                .cls-1 {
+                                    fill: #e7e7e7;
+                                }
+                            </style>
+                        </defs>
+                        <title>user</title>
+                        <path class="cls-1"
+                            d="M412.2,376c2,11.94-7.69,23-19.92,23H108.63c-12.23,0-21.91-11.1-19.92-23,4.84-30.16,19.35-56.91,39.55-77.68a142.27,142.27,0,0,1,78.24-39.54,89.61,89.61,0,0,1-16.22-12.8,85.29,85.29,0,1,1,104.42,12.8C355,268.13,402.24,315.64,412.2,376Z" />
+                    </svg>
+                </div>
+                <div class="input_form">
+                    <input type="password" name="password" placeholder="Sua senha">
+                    <svg id="Layer_4" data-name="Layer 4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 25 25">
+                        <defs>
+                            <style>
+                                .cls-1 {
+                                    fill: #e7e7e7;
+                                }
+                            </style>
+                        </defs>
+                        <title>padlock</title>
+                        <path class="cls-1"
+                            d="M17.54,9.46V7.78a5,5,0,0,0-10.07,0V9.46a2.3,2.3,0,0,0-2,2.29V19a2.31,2.31,0,0,0,2.31,2.31h9.52A2.3,2.3,0,0,0,19.57,19V11.75A2.29,2.29,0,0,0,17.54,9.46ZM13.23,16v1.34a.83.83,0,0,1-1.66,0V16a1.78,1.78,0,0,1-1-1.61,1.82,1.82,0,0,1,3.64,0A1.78,1.78,0,0,1,13.23,16Zm2.31-6.59H9.47V7.78a3,3,0,0,1,6.07,0Z" />
+                    </svg>
+                </div>
+                <div class="input_form">
+                    <input type="password" name="password_confirm" placeholder="Confirme sua senha">
+                    <svg id="Layer_4" data-name="Layer 4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 25 25">
+                        <defs>
+                            <style>
+                                .cls-1 {
+                                    fill: #e7e7e7;
+                                }
+                            </style>
+                        </defs>
+                        <title>padlock</title>
+                        <path class="cls-1"
+                            d="M17.54,9.46V7.78a5,5,0,0,0-10.07,0V9.46a2.3,2.3,0,0,0-2,2.29V19a2.31,2.31,0,0,0,2.31,2.31h9.52A2.3,2.3,0,0,0,19.57,19V11.75A2.29,2.29,0,0,0,17.54,9.46ZM13.23,16v1.34a.83.83,0,0,1-1.66,0V16a1.78,1.78,0,0,1-1-1.61,1.82,1.82,0,0,1,3.64,0A1.78,1.78,0,0,1,13.23,16Zm2.31-6.59H9.47V7.78a3,3,0,0,1,6.07,0Z" />
+                    </svg>
+                </div>
+
+
+                <button type="submit" class="enter_button">CADASTRAR</button>
+
+                <div class="errors">
+                    {{#each errors}}
+                    <div class="alert-error">{{text}}</div>
+                    {{else}}
+                    {{/each}}
+                </div>
+
+                <div class="msg_register">
+                    <p>Ao se registrar você aceita nossa
+                        <a href="/politic-privacity">política deprivacidade.</a>
+                    </p>
+                </div>
+            </form>
+        </aside>
+    </div>
+</div>
